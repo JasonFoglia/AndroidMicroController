@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">UniversalRobotController</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning for devices...</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired - go into settings and pair your device!</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="insecure_connect">Connect a device</string>
+    <string name="help">Help</string>
+
+    <!-- licensed dialog messages -->
+    <string name="check_license">Check license</string>
+    <string name="checking_license">Checking license...</string>
+    <string name="dont_allow">Don\'t allow the user access</string>
+    <string name="allow">Allow the user access</string>
+    <string name="application_error">Application error: %1$s</string>
+    <!-- Unlicensed dialog messages -->
+    <string name="unlicensed_dialog_title">Application not licensed</string>
+    <string name="unlicensed_dialog_body">This application is not licensed. Please purchase it from Android Market.</string>
+    <string name="buy_button">Buy app</string>
+    <string name="quit_button">Exit</string>
+
+    <string name="connecting">Connecting...</string>
+    <string name="deviceNotConnected">Device not connected</string>
+    <string name="unableToConnect">Unable to connect device</string>
+    <string name="connectionLost">Device connection was lost</string>
+    <string name="joy_stick">Joy Stick</string>
+
+
+</resources>
