@@ -156,15 +156,12 @@ public class MainActivity extends LicenseCheckActivity {
 
         ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
-                new ActivityResultCallback<ActivityResult>() {
-                    @Override
-                    public void onActivityResult(ActivityResult result) {
-                        if (result.getResultCode() == Activity.RESULT_OK) {
-                            // There are no request codes
-                            Intent data = result.getData();
-                            connectDevice(data);
-                            Notice("ActivityResultCallback");
-                        }
+                result -> {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        // There are no request codes
+                        Intent data = result.getData();
+                        connectDevice(data);
+                        Notice("ActivityResultCallback");
                     }
                 });
 
@@ -235,6 +232,7 @@ public class MainActivity extends LicenseCheckActivity {
                 if (insideBounds) {
                     int max = relativeLayout.getWidth() / 2;
 
+                    Log.d(TAG, Percentage(X, max) + ":" + Percentage(Y, max));
                     sendMessage(Percentage(X, max) + ":" + Percentage(Y, max));
 
                     params.leftMargin = left;
